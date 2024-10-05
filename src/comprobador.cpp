@@ -11,10 +11,10 @@ double comprobadores::diagonal_mayor = 0;
 double comprobadores::diagonal_menor = 0;
 
 bool comprobadores::comprobador_rango_pitagoras() {
-    if (comprobadores::lado1 > 1000000 || comprobadores::lado2 > 1000000) {
+    if (comprobadores::lado1 > 1000000 && comprobadores::lado2 > 1000000) {
         std::println("Numero demasiado grande.");
         return true;
-    } else if (comprobadores::lado1 < 1000000 || comprobadores::lado2 < 1000000) {
+    } else if (comprobadores::lado1 < -1000000 && comprobadores::lado2 < -1000000) {
         std::println("Número demasiado pequeño.");
         return true;
     } else {
