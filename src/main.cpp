@@ -13,6 +13,6 @@ int main() {
         misceobj.menu();
         casos_switch casobj;
         casobj.caso_switch1();
-    } while (opcion != "5");
+    } while (opcion != 5);
     return 0;
 }
