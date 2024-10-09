@@ -7,7 +7,7 @@
 #include <cmath>
 
 int main() {
-    std::string opcion;
+    int opcion;
     do {
         miscelanea misceobj;
         misceobj.menu();
