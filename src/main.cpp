@@ -7,7 +7,7 @@
 #include <cmath>
 
 int main() {
-    int opcion;
+    int opcion = 0;
     do {
         miscelanea misceobj;
         misceobj.menu();
