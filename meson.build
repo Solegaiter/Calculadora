@@ -1,9 +1,11 @@
 project(
     'calculator',
     'cpp',
-    version: '0.1',
-    default_options: ['warning_level=3', 'werror=true', 'cpp_std=c++23'],
+    version: '0.2',
+    default_options: ['warning_level=3', 'werror=true', 'cpp_std=c++23']
 )
+
+sdl2_dep = dependency('sdl2')
 
 add_project_arguments(
     ['-fvisibility=hidden', '-fvisibility-inlines-hidden'],
@@ -20,4 +22,4 @@ sources = [
 ]
 
 
-executable('calculator', sources, install: true)
+executable('calculator', sources, install: true, dependencies: [sdl2_dep, sdl2_main_dep])
